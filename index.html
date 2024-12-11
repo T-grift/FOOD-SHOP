@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Shop - Delicious Eats</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; 
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        #video-background {
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        header {
+            background: rgba(76, 175, 80, 0.7); 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0; 
+        }
+
+        nav a {
+            color: white; 
+            text-decoration: none; 
+            background-color: rgba(76, 175, 80, 0.8); 
+            padding: 10px 20px; 
+            margin: 0 5px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+        }
+
+        nav a:hover {
+            background-color: rgba(76, 175, 80, 1); 
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .featured-dishes, .events {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .dish, .event {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 30%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(68, 68, 68, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="42 Cheesy Foods You Need To Eat In Your Lifetime   The Ultimate List.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+<header>
+    <h1>Welcome to Our Traditional Food Shop</h1>
+    <p>Taste the Best of Art in the town</p>
+
+   
+    <nav>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="review.html">Reviews</a>
+        <a href="blog.html">Blogs</a>
+        <a href="FAQs.html">FAQs</a>
+    </nav>
+</header>
+
+<section id="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to our food shop! We are dedicated to offering the best culinary experiences. Our passionate chefs use only the freshest ingredients to create delicious, mouth-watering dishes that will tantalize your taste buds.</p>
+</section>
+
+<section id="featured-dishes">
+    <h2>Featured Dishes</h2>
+    <div class="featured-dishes">
+        <div class="dish">
+            <h3>Sadza</h3>
+            <img src="sadza.jpg" alt="Sadza" style="width: 100%; border-radius: 8px;">
+            <p>Sadza to the world.</p>
+        </div>
+        <div class="dish">
+            <h3>Nettle meal</h3>
+            <img src="meal.jpg" alt="Nettle" style="width: 100%; border-radius: 8px;">
+            <p>Fresh cucumbers, ripe tomatoes, and basil create the perfect Nettle.</p>
+        </div>
+        <div class="dish">
+            <h3>Matemba</h3>
+            <img src="matemba.jpg" alt="Matemba" style="width: 100%; border-radius: 8px;">
+            <p>A delightful espresso-flavored Matemba from Kariba dam.</p>
+        </div>
+    </div>
+</section>
+
+<section id="events">
+    <h2>Events & Promotions</h2>
+<div class="events">
+    <div class="event">
+        <h3>Live Music Night</h3>
+        <p>Join us every Friday at 7 PM for a night of live music and good food!</p>
+        <audio controls>
+            <source src="[FREE]_Sad_Emotional_Afro_Type_Beat_2023__Afro_soul_x_Afroswing_typebeat___P.mp3" type="audio/mpeg">
+         
+        </audio>
+    </div>
+    <div class="event">
+        <h3>Happy Hour Specials</h3>
+        <p>Enjoy 50% off on selected appetizers from 5 PM to 7 PM weekdays.</p>
+    </div>
+    <div class="event">
+        <h3>Cook-Off Challenge</h3>
+        <p>Think u have what it takes? Join our team cook-off and win exciting prizes!</p>
+        <video controls width="400">
+            <source src="c:\Users\Theophelus\Videos\4K Video Downloader+\How to cook Cow Foot Stew   Sadza Nemazondo   Zim Food Network.mp4" type="video/mp4">
+           
+        </video>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Food Lovers Shop. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
