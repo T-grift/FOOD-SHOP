@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Food Shop - Delicious Eats</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header {
+            background: rgba(76, 175, 80, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0; 
+        }
+
+        nav a {
+            color: white; 
+            text-decoration: none; 
+            background-color: rgba(76, 175, 80, 0.8); 
+            padding: 10px 20px; 
+            margin: 0 5px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s; 
+        }
+
+        nav a:hover {
+            background-color: rgba(76, 175, 80, 1); 
+        }
+
+        section {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 480px; 
+            margin: 20px auto; 
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 15px; 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 5px 0; 
+        }
+
+        input, select, textarea {
+            padding: 8px; 
+            border: none; 
+            border-radius: 5px; 
+            margin-bottom: 8px; 
+            font-size: 14px; 
+        }
+
+        button.submit-button {
+            padding: 8px; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 14px; 
+            transition: background-color 0.3s; 
+        }
+
+        button.submit-button:hover {
+            background-color: #45a049; 
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between; 
+            margin-top: 10px; 
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .nav-button {
+            background-color: #2196F3; 
+            flex: 1; 
+            margin: 0 5px;
+            text-align: center; 
+            padding: 8px; 
+            font-size: 14px;
+        }
+
+        .nav-button:hover {
+            background-color: #1976D2; 
+        }
+
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="42 Cheesy Foods You Need To Eat In Your Lifetime   The Ultimate List.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+<header>
+    <h1>Make a Reservation</h1>
+    <p>Book your table and enjoy a delightful dining experience!</p>
+
+   
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section id="reservation-form">
+    <h2>Reservation Form</h2>
+    <form action="submit_reservation.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Reservation Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Reservation Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <label for="requests">Special Requests:</label>
+        <textarea id="requests" name="requests" rows="2" placeholder="E.g., Vegan options, birthday celebration, etc."></textarea>
+        
+        <div class="action-buttons">
+            <button type="submit" class="submit-button" onclick="window.location.href='FAQs.html';">Submit Reservation</button>
+            <button type="button" class="submit-button" onclick="window.location.href='gallery.html';">Cancel</button>
+        </div>
+    </form>
+
+    <div class="nav-buttons">
+        <a href="gallery.html" class="nav-button">Back</a>
+        <a href="FAQs.html" class="nav-button">Next</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Food Lovers Shop. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
